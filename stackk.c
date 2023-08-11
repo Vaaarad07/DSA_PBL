@@ -1,13 +1,9 @@
 #include "stdio.h"
 #include "stdlib.h"
+#include "stackk.h"
 
 
-#define max 50
 
-typedef struct stack{
-    int data[max];
-    int top;
-}stack;
 
 
 //int pop(stack *s)

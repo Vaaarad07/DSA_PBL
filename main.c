@@ -1,26 +1,18 @@
 #include "stdio.h"
 #include "stdlib.h"
-//#include "graph.c"
-#include "linkedlistss.c"
-#include "stackk.c"
-#include "queuee.c"
-#include "treee.c"
+#include "linkedlists.h"
+#include "stackk.h"
+#include "queue.h"
+#include "treee.h"
 
+ 
 /*pizza store system where we store past orders in linked list,
                                     current orders in queue,
                                     menu card in trees,
-                                    table status in graphs,
+                                     
                                     total expenses in stacks.*/
 
-/*typedef struct customer
-{
-    int id;
-    int quantity;
-    char name[20];
-    char date[8];
-    // char address[50];
-} customer;*/
-
+ 
 // DSA PBL
 
 int main(){
@@ -36,14 +28,15 @@ int main(){
     //init(s);
 
 
-    printf("Menu needs to be recorded once: \n");
+    printf("Register Menu card: \n");
     root = createTree();
+    printf("\n-----------------------------------\n");
     printf("\n\nPrinting menu: \n");
     inorder(root);
     
     do{
         printf("------------------------------------\n");
-        printf("Select operation:\n1)Place order    |   2)Dispatch order\n3)print orders   |   4)Previous orders\n5)View menu      |   6)Total sale\n7)Quit  |  \n-> ");
+        printf("Select operation:\n1)Place order    |   2)Dispatch order\n3)print orders   |   4)Previous orders\n5)View menu      |   6)Total sale\n7)Quit             |  \n-> ");
         scanf("%d", &option);
         printf("------------------------------------\n");
         switch(option){
@@ -59,24 +52,17 @@ int main(){
                     break;
             case 4: print(head);
                     break;
-            case 5: /*if(! flag){
-                        //create menu
-                        printf("Menu needs to be recorded once: \n");
-                        root = createTree();
+            case 5:  
+                     
                         printf("Printing menu: \n");
                         inorder(root);
-                        flag = 1;
-                    }*/
-                    //else if(flag){
-                        printf("Printing menu: \n");
-                        inorder(root);
-                    //}
+                    
                     break;
             case 6: sale = popall(s);
                     printf("The total sale is:  %d\n", sale);
                     trash = push(s, sale);
                     break;
-            //case 7:
+             
                     break;
             case 7: printf("Counter closed!");
                     break;

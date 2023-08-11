@@ -1,17 +1,9 @@
 #include "stdio.h"
 #include "stdlib.h"
-//#include "linkedlists.c"
+#include "queue.h"
+ 
 
-
-typedef struct customer
-{
-    int id;
-    int quantity;
-    int price;
-    char name[20];
-    char date[8];
-    // char address[50];
-} customer;
+ 
 
 customer data[100];
 int rear = -1;
@@ -46,10 +38,9 @@ void placeOrder()
         printf("Enter date: ");
         scanf("%s", data[rear].date);
         printf("Enter name: ");
-        scanf("%s", data[rear].name); // printf("Enter address:\n");
-        // scanf("%s", data[rear].address);
+        scanf("%s", data[rear].name);  
 
-        printf("Enter number of pizzas to deliver: ");
+        printf("Enter number of dishes to order: ");
         scanf("%d", &data[rear].quantity);
         for(int i =0; i<data[rear].quantity; i++){
             printf("Enter price of dish %d: ", i+1);

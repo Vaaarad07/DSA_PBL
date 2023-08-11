@@ -1,27 +1,20 @@
 #include "stdio.h"
 #include "stdlib.h"
+#include "treee.h"
 
 
-typedef struct bstnode
-{
-    int value;
-    char dishname[10];
-    struct bstnode *left;
-    struct bstnode *right;
-} BSTnode;
 
-BSTnode *insert(BSTnode *T, int value, char dish1[10]);
 
 BSTnode *createTree()
 {
     int n, x, i ;
     char y[10];
     BSTnode *root = NULL;
-    printf("Enter number of dishes: ");
+    printf("Enter number of dishes in Menu: ");
     scanf("%d", &n);
     for (i = 0; i < n; i++)
     {
-        printf("Enter dish value %d: ", i);
+        printf("Enter price of dish %d: ", i+1);
         scanf("%d", &x);
         printf("Enter dish name: ");
         scanf("%s", &y);

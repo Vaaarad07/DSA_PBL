@@ -1,22 +1,8 @@
 #include "stdio.h"
 #include "stdlib.h"
-//#include "queue.c"
-//#include "alpha.c"
-
-
-
-typedef struct node{
-    int idList;
-    char nameList[25];
-    int quantityList;
-    char dateList[8];
-    int pricelist;
-    struct node *link;
-    
-}node;
-
-
+#include "linkedlists.h"
  
+
 
 
 node *create(int id1, int quantity1, char name1[20], char date1[8], int price1){
@@ -74,8 +60,7 @@ void print(node *head){
         printf("Data %d is: %d\n",i, p->data);*/
         i+=1;
     }
-    //printf("--------------------------------------\n");
-    
+     
 }
 
  

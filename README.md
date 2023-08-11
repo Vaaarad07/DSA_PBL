@@ -3,10 +3,10 @@ This was my mini project for Data structures course in the 3rd semester.The main
 The overall idea of the project is implementing various data structures to complete some basic functionalities of a restaurant order counter like storing order details, dispatching orders, storing menu, printing orders and menu, keeping a track of sales.
 ### Following Data structures are used for respective functionalities:
 
-- ***Linked Lists*** to store past orders
-- ***Queue*** to store active orders
-- ***Trees*** to store the menu card
-- ***Stack*** to keep track of sales
+- **Linked Lists** to store past orders
+- **Queue** to store active orders
+- **Trees** to store the menu card
+- **Stack** to keep track of sales
 
 # Installation
 

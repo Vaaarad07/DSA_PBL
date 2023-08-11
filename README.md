@@ -13,17 +13,17 @@ The overall idea of the project is implementing various data structures to compl
 Dedicated Make-file is included in the project.
 Use following commands to install the project directory and run the program:
 ```
-$ git clone https://github.com/Vaaarad07/DSA_PBL_VaradT.git
-$ cd DSA_PBL
-$ make all
-$ ./main
+ git clone https://github.com/Vaaarad07/DSA_PBL_VaradT.git
+ cd DSA_PBL
+ make all
+ ./main
 ```
 
 To remove the binaries & then delete the project files:
 ```
-$ make clean
-$ cd ..
-$ sudo rm -f -r DSA_PBL
+ make clean
+ cd ..
+ sudo rm -f -r DSA_PBL
 ```
 
 Note: These steps are directed from Linux environment, ensure using parallel tools & commands for installation on windows systems.
